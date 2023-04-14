@@ -973,6 +973,64 @@ const Countries = [
     }
 ]
 
+function closePro() {
+    var X = document.getElementById("barcover");
+    if (X.style.display == "none") {
+        X.style.display = "block";
+    } else {
+        X.style.display = "none";
+    }
+}
+
+self.onmessage = function(message) {
+
+    let total = 0;
+     
+    for (let i = 0; i < 7000000000; i++) {
+        total += i;
+    }
+    self.postMessage(total);
+}
+
+
+let total = 0;
+
+Countries.forEach(element => {
+    total += element.population;
+})
+
+const barchart = document.getElementById("chart").innerHTML = total;
+
+
+
+
+
+/*
+var height = 400;
+var width = 400;
+var barwidth = 40;
+var baroffset = 8;
+
+var Chart = d3.select('#chart').append('svg')
+.attr('width',width)
+.attr('height',height)
+.style('background','blue')
+.selectAll('rect')
+.data(Countries)
+.enter().append('rect')
+.style('fill','lightgreen')
+.attr('width', barwidth)
+.attr('height',function(d){
+    return d;
+})
+.attr('x', function(d, i){
+    return i * (barwidth + baroffset);
+})
+.attr('y', function(d){
+    return height - d;
+})
+
+
 const holder = document.getElementById("m_holder");
 
 Countries.map((country) => {
@@ -1012,6 +1070,8 @@ Countries.map((country) => {
         `;
     }
 })
+*/
+
 /*
 const myObj = JSON.parse(Countries);
 

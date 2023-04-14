@@ -1,20 +1,119 @@
-#m_holder, #holder, #l_holder{
-    margin-top: 2rem;
-    font-weight: 700;
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+h1{
     text-align: center;
+    letter-spacing: 1px;
 }
-#m_holder div{
-    padding-top: 1rem;
-    font-weight: 100;
-    text-align: left;
+
+#buttonholder{
+    margin-left: 15rem;
+    margin-top: 3rem;
 }
-#holder div{
-    padding-top: 1rem;
-    font-weight: 100;
-    text-align: left;
+button{
+    height: 3rem;
+    width: 10rem;
+    margin-left: 3rem;
+    font-weight: 600;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
-#l_holder div{
-    padding-top: 1rem;
-    font-weight: 100;
-    text-align: left;
+#m_holder{
+    background-image: linear-gradient(#d31027, #ea384d);
+    color: white;
+}
+#holder{
+    background-image: linear-gradient(#2193b0,#6dd5ed);
+}
+#l_holder{
+    background-image: linear-gradient(#e44d26,#f16529);
+}
+#bar{
+    background-image: linear-gradient(#1f4037,#99f2c8);
+}
+
+
+/*================================================================================================*/
+
+#display2{
+    margin-left: 26rem;
+    position: absolute;
+    top: -1.3rem;
+}
+
+.population2{
+    position: absolute;
+    margin-top: -1.8rem;
+    margin-left: 15rem;
+    color:#057e9c;
+    font-weight: 600;
+    animation: 10s pop ease-in;
+}
+
+/*================================================================================================*/
+.population3{
+    position: absolute;
+    margin-top: -1.9rem;
+    margin-left: 28rem;
+    color: #e44d26;
+    font-weight: 600;
+    animation: 10s pop ease-in;
+}
+
+#display3{
+    margin-left: 52rem;
+    position: absolute;
+    top: -1.3rem;
+}
+
+/*================================================================================================*/
+
+.country{
+    font-weight: 600;
+    padding: 0.8rem;
+    animation: 10s pop ease-in;
+}
+
+#display{
+    position: relative;;
+}
+
+.population{
+    position: absolute;
+    margin-top: -1.8rem;
+    margin-left: 13rem;
+    color: #d31027;
+    font-weight: 600;
+    animation: 10s pop ease-in;
+}
+
+#displayholder{
+    width: 82rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 3;
+}
+@keyframes pop {
+    from{
+        opacity: 0;
+    }   
+    to{
+        opacity: 1;
+    }
+}
+
+.barcover{
+    margin-left: 20rem;
+    position: relative;
+    z-index: 1;
+}
+
+.barcover svg{
+    display: inline-flexbox;
+    position: relative;
 }

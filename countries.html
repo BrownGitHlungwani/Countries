@@ -5,16 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="country.css">
-    <title>Document</title>
+    <title>Fetch API</title>
 </head>
 <body>
-    
-    <div id="m_holder">Most Populated</div>
 
-    <div id="holder">Medium Populated</div>
-
-    <div id="l_holder">Less Populated</div>
+    <h1>World Population</h1>
     
+    <div id="buttonholder">
+
+        <button id="m_holder" onclick="closePro()">Most Populated</button>
+
+        <button id="holder">Medium Populated</button>
+    
+        <button id="l_holder">Less Populated</button>
+
+        <button id="bar">Population Stets</button>
+
+    </div>
+
+    <div id="displayholder">
+        
+        <div id="display"></div>
+
+        <div id="display2"></div>
+
+       <div id="display3"></div>
+
+    </div>
+
+
+    <div class="barcover" id="barcover">
+
+        <div id="chart"></div>
+
+        <svg width="300" height="340">
+            <rect width="100" height="400" style="fill:rgb(81, 81, 82);stroke-width:2;stroke:rgb(0,0,0)" />
+            <text x="0" y="15" fill="white">2023</text>
+        </svg>
+
+        <svg width="300" height="400">
+            <rect width="100" height="400" style="fill:rgb(81, 81, 82);;stroke-width:2;stroke:rgb(0,0,0)" />
+            <text x="0" y="15" fill="white">2022</text>
+        </svg>
+
+        <svg width="300" height="380">
+            <rect width="100" height="400" style="fill:rgb(81, 81, 82);stroke-width:2;stroke:rgb(0,0,0)" />
+            <text x="0" y="15" fill="white">2021</text>
+        </svg>
+
+    </div>
+
+    <script src="getdata.js"></script>
+
     <script src="country.js"></script>
 
 </body>
