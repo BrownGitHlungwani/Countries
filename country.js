@@ -983,9 +983,7 @@ function closePro() {
 }
 
 self.onmessage = function(message) {
-
     let total = 0;
-     
     for (let i = 0; i < 7000000000; i++) {
         total += i;
     }
@@ -999,7 +997,7 @@ Countries.forEach(element => {
     total += element.population;
 })
 
-const barchart = document.getElementById("chart").innerHTML = total;
+ const barchart = document.getElementById("chart").innerHTML = total;
 
 
 

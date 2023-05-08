@@ -17,12 +17,9 @@
 
 
 const submited = document.querySelector("#bar");
-
 const work = new Worker('country.js');
-
 submited.addEventListener('click', (event)=> {
-
-    work.postMessage('hello')
+    work.postMessage('Reading....')
 });
 
 work.onmessage = function(message){
